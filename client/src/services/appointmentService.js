@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL =  "https://appointment-booking-app-3u1r.onrender.com/api/appointments";
+const API_URL =  "https://appointment-booking-app-1-1oqd.onrender.com/api/appointments";
 
 export const getAppointments = async () => {
   const response = await axios.get(API_URL);
