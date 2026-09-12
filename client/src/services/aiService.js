@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/ai";
+const API_URL = "https://appointment-booking-app-3u1r.onrender.com/api/ai";
 
 export const getHealthGuidance = async (
   message,
