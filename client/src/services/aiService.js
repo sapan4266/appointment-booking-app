@@ -1,4 +1,5 @@
-const API_URL = "https://appointment-booking-app-3u1r.onrender.com/api/ai";
+const API_URL =
+  "https://appointment-booking-app-3u1r.onrender.com/api/ai";
 
 export const getHealthGuidance = async (
   message,
@@ -15,11 +16,13 @@ export const getHealthGuidance = async (
   });
 
   if (!response.ok) {
-    let errorMessage = "Unable to get AI health guidance.";
+    let errorMessage =
+      "Unable to get AI health guidance.";
 
     try {
       const errorData = await response.json();
-      errorMessage = errorData.message || errorMessage;
+      errorMessage =
+        errorData.message || errorMessage;
     } catch {
       // Ignore parsing error
     }

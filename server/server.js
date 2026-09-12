@@ -15,9 +15,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Appointment routes
 app.use("/api/appointments", appointmentRoutes);
+
+// AI routes
 app.use("/api/ai", aiRoutes);
 
+// Temporary AI route test
+app.get("/api/ai/test", (req, res) => {
+  res.json({
+    message: "AI route is available"
+  });
+});
+
+// Root route
 app.get("/", (req, res) => {
   res.json({
     message: "Appointment Booking API is running"
